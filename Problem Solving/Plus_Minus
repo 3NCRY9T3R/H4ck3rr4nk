@@ -1,1 +1,34 @@
-
+import java.util.*;
+public class Plus_Minus
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        double negative=0,positive=0,zero=0;
+        int i;
+        int size=sc.nextInt();
+        int arr[] = new int [size];
+        for(i=0;i<size;i++)
+        {
+            arr[i]=sc.nextInt();
+            if(arr[i]>0)
+            {
+                ++positive;
+            }
+            else if(arr[i]<0)
+            {
+                ++negative;
+            }
+            else
+            {
+                ++zero;
+            }
+        }
+        System.out.printf("%.6f %n",(positive)/size);
+        System.out.printf("%.6f %n",(negative)/size);
+        System.out.printf("%.6f %n",(zero)/size);
+    }
+}
+        
+        
+        

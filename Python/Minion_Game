@@ -1,0 +1,32 @@
+def minion_game(string):
+    list1=[]
+    list2=[]
+    list3=[]
+    c=0
+    v=0
+    stuart=0
+    kevin=0
+    for i in s:
+        list1.append(i)
+    l=len(list1)
+    for i in range(l):
+        if((list1[i]=='A') or (list1[i]=='E') or (list1[i]=='I') or (list1[i]=='O') or (list1[i]=='U')):
+            list2.append(i)
+            v=v+1
+        else:
+            list3.append(i)
+            c=c+1
+    for i in range(len(list2)):
+        kevin=kevin+(l-list2[i])
+    for i in range(len(list3)):
+        stuart=stuart+(l-list3[i]) 
+    if(stuart>kevin):
+        print('Stuart',stuart)       
+    else:
+        print('kevin',kevin)
+
+
+
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)

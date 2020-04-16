@@ -1,0 +1,5 @@
+cost=float(input())
+tip=int(input())
+tax=int(input())
+final=cost+(cost*tip/100)+(cost*tax/100)
+print(round(final))

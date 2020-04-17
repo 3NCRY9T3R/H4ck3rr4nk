@@ -3,7 +3,7 @@ if(a%2!=0 or a==1):
     print("Weird")
 if((a%2==0) and 2<a<5):
     print("Not Weird")
-if((a%2==0) and 6<a<20):
+if((a%2==0) and 6<a<=20):
     print("Weird")
 if((a%2==0) and a>=21):
     print("Not Weird")
